@@ -1,0 +1,10 @@
+#!/usr/bin/env node # -*- javascript -*- -p
+
+require('coffee-script');
+var argv = require('optimist')
+    .usage('Usage: testlet [test_script_dir]')
+    .argv;
+var path = require('path');
+var test = require('../src/file');
+test(argv[0] || './test');
+
