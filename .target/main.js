@@ -8,12 +8,12 @@ var test = new Runner();
 (function() {
 
   test.add('this is a new suite', function() {
-    return test["do"]('test', function(next) {
+    return test["do"]('this is a test case', function(next) {
       try {
         test.ok((function() {
           return 1 === 1;
         }));
-        test.equal(1, 2, 'this is stuff');
+        test.equal(1, 2, '1 should equal 2');
         test.throws(function() {
           throw new Error("this is an error");
         });
