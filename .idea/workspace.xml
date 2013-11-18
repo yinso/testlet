@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6269dc35-6db9-49bf-9f97-59395b82a292" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.bean" afterPath="$PROJECT_DIR$/package.bean" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="testlet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="0" selection-start="3121" selection-end="3121" vertical-scroll-proportion="-19.88889" vertical-offset="663" max-vertical-offset="1350">
+            <state line="78" column="0" selection-start="2855" selection-end="2855" vertical-scroll-proportion="0.95633185" vertical-offset="513" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
@@ -118,10 +117,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.bean" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="package.bean" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.bean">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="411" selection-end="411" vertical-scroll-proportion="0.43541363" vertical-offset="0" max-vertical-offset="689">
+            <state line="20" column="0" selection-start="411" selection-end="411" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="480">
               <folding />
             </state>
           </provider>
@@ -159,8 +158,8 @@
         <option value="$PROJECT_DIR$/src/runner.coffee" />
         <option value="$PROJECT_DIR$/src/cli-reporter.coffee" />
         <option value="$PROJECT_DIR$/test/test.coffee" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/package.bean" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -510,21 +509,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.bean">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="411" selection-end="411" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="3121" selection-end="3121" vertical-scroll-proportion="-19.88889" vertical-offset="663" max-vertical-offset="1350">
+        <state line="78" column="0" selection-start="2855" selection-end="2855" vertical-scroll-proportion="0.95633185" vertical-offset="513" max-vertical-offset="1350">
           <folding />
         </state>
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.bean">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="411" selection-end="411" vertical-scroll-proportion="0.43541363" vertical-offset="0" max-vertical-offset="689">
-          <folding />
-        </state>
       </provider>
     </entry>
   </component>

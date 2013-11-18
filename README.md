@@ -6,14 +6,14 @@ as well as browser-based testing for the same NodeJS module. This is written wit
 and [RequireJS](http://requirejs.org) in mind.
 
 Installation
-============
+------------
 
 To install - use npm.
 
     npm install -g testlet
 
 Usage
-=====
+-----
 
 Similar with other frameworks, you organize a `test` folder within your source tree, with each files denoting specific
 test case. Then you just call testlet at the root of the source tree.
@@ -25,8 +25,8 @@ In the command line version it will automatically look within the test folder, a
 Testlet's browser-side isn't ready - it will be described in README as soon as it's ready for use. In the mean time
 you can look at the `.target` folder for a rudimentary understanding on how it would work.
 
-How to Write a Test Script
-==========================
+Test Script Structure
+---------------------
 
 `Testlet` expects similar test script structure to other test framework such as [`Mocha`](http://visionmedia.github.io/mocha/).
 
@@ -61,7 +61,7 @@ run as async (i.e. you are expected to call the callback).
 `describe` is an alias for `test.add`, and `it` is an alias for `test.do`.
 
 Assertions
-==========
+----------
 
 You are free to use any assertion framework. On the other hand, testlet comes with a few built-in assertions for your use.
 
@@ -73,8 +73,8 @@ You are free to use any assertion framework. On the other hand, testlet comes wi
 
     test.isa(val, type); // test.isa asserts the value is of the type type. type can be a string (uses typeof) or object (uses instanceof).
 
-Logging to Test Case
-====================
+Logging
+-------
 
 `console.log` is hard to use in combination with test cases because of the asynchronous execution nature. You can
 instead log to `test.log` (with the same signature), and the log will be displayed along with the test case result.
