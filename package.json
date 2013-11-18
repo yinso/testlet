@@ -16,10 +16,10 @@
   },
   "main": "./lib/runner.js",
   "dependencies": {
-    "coffee-script": "=1.4.0"
+    "coffee-script": "=1.4.0",
+    "amdee": "~ 0.4.5"
   },
   "devDependencies": {
-    "amdee": "~ 0.4.0",
     "coffee-bean": "=0.1.0",
     "pegjs": "=0.7.0"
   },
