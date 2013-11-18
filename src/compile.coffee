@@ -33,6 +33,14 @@ template = (files, targetPath) ->
   """
 var Runner = require("testlet");
 var test = new Runner();
+function describe (name, func) {
+  test.add(name, func);
+}
+
+function it (name, func) {
+  test.do(name, func);
+}
+
 #{files.join('')}
 if (window) {
   window.test = test;

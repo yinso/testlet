@@ -68,7 +68,7 @@ class CliReporter
     @log 0, ""
     @log 0, termColor {fg: 'blue', underline: true, bright: true, bold: true}, "Test Results"
     @log 0, ""
-    @log 0, "Status:", @status(@result), success, "/", count, "passed."
+    @log 0, "Status:", @status(@result), success, "/", count, "suites passed."
     @log 0, ""
     for failedResult in failedResults
       @reportInner failedResult, 1
@@ -84,7 +84,7 @@ class CliReporter
     if result.suite?.name
       @log tabLevel, "Suite:", termColor({fg: 'blue', underline: true, bright: true, bold: true}, result.suite.name)
       @log tabLevel
-    @log tabLevel, "status:", @status(result), success, " / ", count, " passed."
+    @log tabLevel, "status:", @status(result), success, "/", count, " cases passed."
     @log tabLevel
     for failedResult in failedResults
       @reportCase failedResult, tabLevel + 1
@@ -105,6 +105,10 @@ class CliReporter
       @log tabLevel, "[case]", termColor {fg: 'magenta', underline: true}, testResult.case.name
       @log tabLevel + 1, testResult.case.func
       @log tabLevel, "[actual]", termColor({fg: 'red', bold: true}, testResult.error)
+      if testResult.logs.length > 0
+        @log tabLevel, "[logs]"
+        for log in testResult.logs
+          @log tabLevel + 1, log...
       @log tabLevel
 
 module.exports = CliReporter

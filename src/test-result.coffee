@@ -1,5 +1,5 @@
 class TestResult
-  constructor: (@case, @error) ->
+  constructor: (@case, @logs, @error) ->
     @pass = not @error
 
 module.exports = TestResult

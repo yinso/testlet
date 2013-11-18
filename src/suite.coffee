@@ -4,7 +4,7 @@ SuiteResult = require './suite-result'
 Test = require './test'
 
 class Suite
-  constructor: (@name, @func) ->
+  constructor: (@runner, @name, @func) ->
     if not @func instanceof Function
       throw new Error("Suite_expect_name_and_function; passed: #{@name}, #{@func}")
     @cases = []
