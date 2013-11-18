@@ -1,69 +1,13 @@
 {deepEqual, forEach} = require './util'
-
-class TestResult
-  constructor: (@case, @error) ->
-    @pass = not @error
-
-# if we want to deal with timeout... don't worry about it for now.
-class Test
-  constructor: (@name, @func) ->
-    @async = @func and @func.length
-  run: (next) ->
-    if @async
-      try
-        @func (err, res) =>
-          console.log 'Test.run', @async, @func
-          result =
-            if err
-              new TestResult @, e
-            else
-              new TestResult @
-          next null, result
-      catch e
-        next null, new TestResult @, e
-    else
-      result =
-        try
-          @func()
-          new Result @
-        catch e
-          new Result @, e
-      next null, result
-
-class SuiteResult
-  constructor: (@suite) ->
-    @results = []
-    @pass = true
-  push: (result) ->
-    @results.push result
-    if not result.pass
-      @pass = false
-
-class Suite
-  constructor: (@name, @func) ->
-    if not @func instanceof Function
-      throw new Error("Suite_expect_name_and_function; passed: #{@name}, #{@func}")
-    @cases = []
-  eval: () ->
-    @func()
-  add: (testCase) ->
-    @cases.push testCase
-  run: (next) ->
-    result = new SuiteResult @
-    helper = (test, next) ->
-      test.run (err, res) ->
-        result.push res
-        next()
-    cases = [].concat(@cases)
-    forEach cases, helper, (err, res) ->
-      if err
-        next err
-      else
-        next null, result
+TestResult = require './test-result'
+SuiteResult = require './suite-result'
+Test = require './test'
+Suite = require './suite'
 
 class Runner
   constructor: () ->
     @suites = []
+    @name = "All Tests"
   add: (name, func) -> # if we add inner suite we'll have to be careful about restoring the previous suite.
     # an inner suite - how do add an inner suite?
     suite = new Suite(name, func)
@@ -75,6 +19,8 @@ class Runner
     finally
       @currentSuite = prevSuite
   do: (name, func) ->
+    if not @currentSuite
+      throw new Error("test.do must be called within test.add")
     @currentSuite.add new Test(name, func)
   ok: (val, msg = "ok(#{val})") ->
     if not val
@@ -96,7 +42,6 @@ class Runner
       if not lhs instanceof rhs
         throw new Error("failed: #{msg}")
   run: (cb) ->
-    console.log 'Runner.run'
     result = new SuiteResult @
     cases = [].concat(@suites)
     helper = (test, next) ->

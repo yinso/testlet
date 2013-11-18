@@ -2,6 +2,7 @@ Runner = require './runner'
 fs = require 'fs'
 path = require 'path'
 util = require './util'
+CliReporter = require './cli-reporter'
 require 'coffee-script'
 
 
@@ -12,21 +13,26 @@ normalizePath = (dirPath, filePath) ->
 
 entry = (dirPath) ->
   runner = new Runner()
+  global.test = runner
   helper = (filePath, next) ->
     loadTest runner, normalizePath(dirPath, filePath), next
   # how do we ensure that this will load coffee-script?
   fs.readdir dirPath, (err, files) ->
     util.forEach files, helper, (err, res) ->
       if err
-        console.log "test.fail.load:", err
+        console.error "[Error] encountered error while loading test cases", err
       else
-        console.log 'runner.torun'
         runner.run (err, res) ->
-          console.log "result: ", err, res
+          if err
+            console.error "[Error] encountered error while executing test cases", err
+          else
+            reporter = new CliReporter res
+            reporter.report()
 
 loadTest = (runner, filePath, next) ->
   try
-    util.require filePath, {test: runner}
+    #util.require filePath, {test: runner}
+    require filePath
     next null
   catch e
     next e

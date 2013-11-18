@@ -59,15 +59,7 @@ requireContext = (spec, context) ->
       if global.hasOwnProperty(key)
         replaced[key] = global[key]
       global[key] = val
-  try
-    require path.resolve(callerPath, '..', spec) # .. is required due to the way path works.
-  finally
-    for key, val of context
-      if context.hasOwnProperty(key)
-        if replaced.hasOwnProperty(key)
-          global[key] = replaced[key]
-        else
-          delete global[key]
+  require path.resolve(callerPath, '..', spec) # .. is required due to the way path works.
 
 module.exports =
   deepEqual: deepEqual
