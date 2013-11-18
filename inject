@@ -1,0 +1,12 @@
+#!/usr/bin/env coffee
+
+util = require './src/util'
+
+# the question is - is this the best way of doing this especially if we want to move toward client-side?
+# or is it to rewrite the file so it would easily work on the client-side?
+# the truth is that this type of injection (specifically on stack trace) - this is not reliable on client-side
+# so we cannot use this particular technique (not unless we want to move away from the
+util.require '../bookish/test/array',
+  it: (desc, fn) -> console.log "it", desc, fn
+  describe: (desc, fn) -> console.log "describe", desc, fn
+

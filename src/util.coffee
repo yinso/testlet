@@ -1,3 +1,5 @@
+path = require 'path'
+
 deepEqual = (o1, o2) ->
   left = (o1, o2) ->
     for key, val of o1
@@ -30,6 +32,50 @@ forEach = (ary, iterator, callback) ->
           helper i + 1, result
   helper 0, null
 
+stack = () ->
+  origPrepStack = Error.prepareStackTrace
+  Error.prepareStackTrace = (_, stack) -> stack
+  err = new Error()
+  stack = err.stack
+  Error.prepareStackTrace = origPrepStack
+  stack
+
+callerFilePath = (beyondFunc) ->
+  stacks = stack()
+  top = stacks[0]
+  while stacks.length > 0
+    if stacks[0].getFunctionName() == beyondFunc
+      stacks.shift()
+      return stacks[0].getFileName()
+    else
+      stacks.shift()
+  throw new Error("stack_not_matching_funcName: #{beyondFunc}")
+
+requireContext = (spec, context) ->
+  callerPath = callerFilePath 'requireContext'
+  replaced = {}
+  for key, val of context
+    if context.hasOwnProperty(key)
+      if global.hasOwnProperty(key)
+        replaced[key] = global[key]
+      global[key] = val
+  try
+    require path.resolve(callerPath, '..', spec) # .. is required due to the way path works.
+  finally
+    for key, val of context
+      if context.hasOwnProperty(key)
+        if replaced.hasOwnProperty(key)
+          global[key] = replaced[key]
+        else
+          delete global[key]
+
+testGetStack = () ->
+  getStack()
+
 module.exports =
   deepEqual: deepEqual
   forEach: forEach
+  require: requireContext
+  stack: stack
+  callerFilePath: callerFilePath
+

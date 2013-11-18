@@ -1,8 +1,9 @@
 Runner = require './runner'
 fs = require 'fs'
 path = require 'path'
-{deepEqual, forEach} = require './util'
+util = require './util'
 require 'coffee-script'
+
 
 normalizePath = (dirPath, filePath) ->
   #fullPath = dirPath + "/" + filePath # do I want to resolve the fullPath?
@@ -15,24 +16,20 @@ entry = (dirPath) ->
     loadTest runner, normalizePath(dirPath, filePath), next
   # how do we ensure that this will load coffee-script?
   fs.readdir dirPath, (err, files) ->
-    forEach files, helper, (err, res) ->
+    util.forEach files, helper, (err, res) ->
       if err
-        console.log "fail load:", err
+        console.log "test.fail.load:", err
       else
+        console.log 'runner.torun'
         runner.run (err, res) ->
           console.log "result: ", err, res
 
-
 loadTest = (runner, filePath, next) ->
-  moduleFunc = require filePath
-  if not (moduleFunc instanceof Function)
-    next new Error("module #{filePath} not export a function")
-  else
-    try
-      moduleFunc(runner)
-      next null
-    catch e
-      next e
+  try
+    util.require filePath, {test: runner}
+    next null
+  catch e
+    next e
 
 module.exports = entry
 
