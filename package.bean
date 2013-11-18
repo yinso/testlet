@@ -11,14 +11,13 @@ engines:
 scripts:
   test: 'make test'
   prepublish: 'make'
-main: './lib/main.js'
+main: './lib/runner.js'
 dependencies:
   'coffee-script': '=1.4.0'
+  amdee: '~ 0.4.5'
 devDependencies:
-  amdee: '~ 0.4.0'
-  chai: '= 1.4.0'
-  mocha: '= 1.7.3'
   'coffee-bean': '=0.1.0'
   pegjs: '=0.7.0'
 amdee:
-  main: './src/main.coffee'
+  main: './src/runner.coffee'
+  #skip: ['testlet']

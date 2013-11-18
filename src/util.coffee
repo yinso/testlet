@@ -69,9 +69,6 @@ requireContext = (spec, context) ->
         else
           delete global[key]
 
-testGetStack = () ->
-  getStack()
-
 module.exports =
   deepEqual: deepEqual
   forEach: forEach

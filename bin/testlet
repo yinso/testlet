@@ -2,9 +2,19 @@
 
 require('coffee-script');
 var argv = require('optimist')
+    .alias('c', 'compile')
     .usage('Usage: testlet [test_script_dir]')
     .argv;
 var path = require('path');
 var test = require('../src/file');
-test(argv[0] || './test');
+var compile = require('../src/compile');
+var targetPath = argv[0] || './test';
+
+if (argv.compile) {
+    compile(targetPath, argv.compile, function(err, res) {
+        console.log('Compile:', err, res);
+    });
+} else {
+    test(targetPath);
+}
 
