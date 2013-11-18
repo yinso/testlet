@@ -6,6 +6,8 @@ version: '0.1.2'
 repository:
   type: 'git'
   url: 'git@github.com:yinso/testlet.git'
+bin:
+  testlet: "./bin/testlet"
 engines:
   node: '~ 0.8.4'
 scripts:
@@ -14,7 +16,8 @@ scripts:
 main: './lib/runner.js'
 dependencies:
   'coffee-script': '=1.4.0'
-  amdee: '~ 0.4.5'
+  amdee: '~ 0.5.4'
+  optimist: '=0.3.1'
 devDependencies:
   'coffee-bean': '=0.1.0'
   pegjs: '=0.7.0'

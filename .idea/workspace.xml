@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6269dc35-6db9-49bf-9f97-59395b82a292" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.bean" afterPath="$PROJECT_DIR$/package.bean" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="testlet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,10 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="0" selection-start="2250" selection-end="2250" vertical-scroll-proportion="0.98253274" vertical-offset="240" max-vertical-offset="1350">
+            <state line="80" column="0" selection-start="3121" selection-end="3121" vertical-scroll-proportion="-19.88889" vertical-offset="663" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
@@ -60,7 +60,9 @@
         <entry file="file://$PROJECT_DIR$/src/test-result.coffee">
           <provider selected="true" editor-type-id="text-editor">
             <state line="2" column="22" selection-start="80" selection-end="80" vertical-scroll-proportion="-1.2" vertical-offset="0" max-vertical-offset="165">
-              <folding />
+              <folding>
+                <marker date="1384813295000" expanded="true" signature="19:80" placeholder="constructor: (@case, @logs, @error) -&gt;&#10;    @pass = not @error..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,7 +71,13 @@
         <entry file="file://$PROJECT_DIR$/src/runner.coffee">
           <provider selected="true" editor-type-id="text-editor">
             <state line="49" column="0" selection-start="1491" selection-end="1491" vertical-scroll-proportion="-6.8235292" vertical-offset="387" max-vertical-offset="1050">
-              <folding />
+              <folding>
+                <marker date="1384813386000" expanded="true" signature="182:1767" placeholder="constructor: () -&gt;&#10;    @suites = []&#10;    @name = &quot;All Tests&quot;&#10;    @innerLogs = []..." />
+                <marker date="1384813386000" expanded="true" signature="1375:1653" placeholder="..." />
+                <marker date="1384813386000" expanded="true" signature="1468:1591" placeholder="..." />
+                <marker date="1384813386000" expanded="true" signature="1499:1591" placeholder="..." />
+                <marker date="1384813386000" expanded="true" signature="1721:1767" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,10 +118,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.bean" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="package.bean" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.bean">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="15" selection-start="126" selection-end="126" vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="435">
+            <state line="20" column="0" selection-start="411" selection-end="411" vertical-scroll-proportion="0.43541363" vertical-offset="0" max-vertical-offset="689">
               <folding />
             </state>
           </provider>
@@ -151,8 +159,8 @@
         <option value="$PROJECT_DIR$/src/runner.coffee" />
         <option value="$PROJECT_DIR$/src/cli-reporter.coffee" />
         <option value="$PROJECT_DIR$/test/test.coffee" />
-        <option value="$PROJECT_DIR$/package.bean" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/package.bean" />
       </list>
     </option>
   </component>
@@ -455,27 +463,28 @@
     <entry file="file://$PROJECT_DIR$/src/test-result.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="22" selection-start="80" selection-end="80" vertical-scroll-proportion="-1.2" vertical-offset="0" max-vertical-offset="165">
-          <folding />
+          <folding>
+            <marker date="1384813295000" expanded="true" signature="19:80" placeholder="constructor: (@case, @logs, @error) -&gt;&#10;    @pass = not @error..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/runner.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="0" selection-start="1491" selection-end="1491" vertical-scroll-proportion="-6.8235292" vertical-offset="387" max-vertical-offset="1050">
-          <folding />
+          <folding>
+            <marker date="1384813386000" expanded="true" signature="182:1767" placeholder="constructor: () -&gt;&#10;    @suites = []&#10;    @name = &quot;All Tests&quot;&#10;    @innerLogs = []..." />
+            <marker date="1384813386000" expanded="true" signature="1375:1653" placeholder="..." />
+            <marker date="1384813386000" expanded="true" signature="1468:1591" placeholder="..." />
+            <marker date="1384813386000" expanded="true" signature="1499:1591" placeholder="..." />
+            <marker date="1384813386000" expanded="true" signature="1721:1767" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="9" selection-start="702" selection-end="702" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.bean">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="15" selection-start="126" selection-end="126" vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="435">
           <folding />
         </state>
       </provider>
@@ -503,12 +512,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="2250" selection-end="2250" vertical-scroll-proportion="0.98253274" vertical-offset="240" max-vertical-offset="1350">
+        <state line="80" column="0" selection-start="3121" selection-end="3121" vertical-scroll-proportion="-19.88889" vertical-offset="663" max-vertical-offset="1350">
           <folding />
         </state>
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.bean">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="411" selection-end="411" vertical-scroll-proportion="0.43541363" vertical-offset="0" max-vertical-offset="689">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
