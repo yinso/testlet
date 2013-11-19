@@ -29,10 +29,10 @@ resolveFiles = (filePath) ->
   files
 
 # copying all of the files over would be hard.
-template = (files, targetPath) ->
+template = (timeout, files, targetPath) ->
   """
 var Runner = require("testlet");
-var test = new Runner();
+var test = new Runner(#{timeout});
 function describe (name, func) {
   test.add(name, func);
 }
@@ -49,12 +49,12 @@ module.exports = test;
 test.run(function (err, res) { console.log(err, res); });
 """
 
-compile = (dirPath, targetPath, cb) ->
+compile = (timeout, dirPath, targetPath, cb) ->
   # we should first create a temporary directory...
 
   # do we want to use the files to rewrite things toward the appropriate
   files = resolveFiles path.resolve(dirPath)
-  fs.writeFile targetPath, template(files, path.resolve(targetPath)), 'utf8', (err) ->
+  fs.writeFile targetPath, template(timeout, files, path.resolve(targetPath)), 'utf8', (err) ->
     if err
       cb err
     else

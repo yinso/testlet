@@ -3,18 +3,22 @@
 require('coffee-script');
 var argv = require('optimist')
     .alias('c', 'compile')
-    .usage('Usage: testlet [test_script_dir]')
+    .alias('t', 'timeout')
+    .default({timeout: 2000})
+    .describe('timeout', '-t or --timeout. Default 2000 (milliseconds)')
+    .usage('Usage: testlet [-t|--timeout <timeout>] [test_script_dir]')
     .argv;
 var path = require('path');
 var test = require('../src/file');
 var compile = require('../src/compile');
+var timeout = argv.timeout || 2000;
 var targetPath = argv[0] || './test';
 
 if (argv.compile) {
-    compile(targetPath, argv.compile, function(err, res) {
+    compile(timeout, targetPath, argv.compile, function(err, res) {
         console.log('Compile:', err, res);
     });
 } else {
-    test(targetPath);
+    test(timeout, targetPath);
 }
 

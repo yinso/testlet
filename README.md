@@ -22,6 +22,13 @@ test case. Then you just call testlet at the root of the source tree.
 
 In the command line version it will automatically look within the test folder, and then execute them.
 
+Testlet has the following parameters
+
+* `-t|--timeout`
+
+  Default 2000 in milliseconds. This specifies how long a test case is to run before timing out.
+
+
 Testlet's browser-side isn't ready - it will be described in README as soon as it's ready for use. In the mean time
 you can look at the `.target` folder for a rudimentary understanding on how it would work.
 

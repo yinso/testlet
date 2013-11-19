@@ -5,7 +5,7 @@ Test = require './test'
 Suite = require './suite'
 
 class Runner
-  constructor: () ->
+  constructor: (@timeout = 2000) ->
     @suites = []
     @name = "All Tests"
     @innerLogs = []

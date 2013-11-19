@@ -11,7 +11,7 @@ normalizePath = (dirPath, filePath) ->
   fullPath = path.resolve(path.join(dirPath, filePath))
   path.join(path.dirname(fullPath), path.basename(filePath, path.extname(filePath)))
 
-entry = (dirPath) ->
+entry = (timeout, dirPath) ->
   runner = new Runner()
   global.test = runner
   global.describe = (name, func) ->
