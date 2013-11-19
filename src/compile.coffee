@@ -38,7 +38,7 @@ function describe (name, func) {
 }
 
 function it (name, func) {
-  test.do(name, func);
+  test.it(name, func);
 }
 
 #{files.join('')}

@@ -19,7 +19,7 @@ class Runner
       @currentSuite.eval()
     finally
       @currentSuite = prevSuite
-  do: (name, func) ->
+  it: (name, func) ->
     if not @currentSuite
       throw new Error("test.do must be called within test.add")
     @currentSuite.add new Test(@, name, func)

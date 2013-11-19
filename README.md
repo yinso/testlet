@@ -65,7 +65,7 @@ test cases, and the function for `it` is the test case itself.
 The function for `it` can be either synchronous or asynchronous. If you define a parameter for the function, it will be
 run as async (i.e. you are expected to call the callback).
 
-`describe` is an alias for `test.add`, and `it` is an alias for `test.do`.
+`describe` is an alias for `test.add`, and `it` is an alias for `test.it`.
 
 Assertions
 ----------
