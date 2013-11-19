@@ -15,9 +15,7 @@ class Suite
   run: (next) ->
     result = new SuiteResult @
     helper = (test, next) ->
-      console.log 'Suite.run.helper.beforeRun', test.name
       test.run (err, res) ->
-        console.log 'Suite.run.helper.afterRun', test.name, err
         result.push res
         next()
     cases = [].concat(@cases)

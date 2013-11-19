@@ -4,14 +4,19 @@ timeoutCallback = (timeout, cb, timeoutCB) ->
   obj =
     id: null
     timedOut: false
+    once: false
   whenTimeout = () ->
     obj.timedOut = true
     clearTimeout obj.id
     timeoutCB()
   beforeTimeout = () ->
     if not obj.timedOut
-      clearTimeout obj.id
-      cb.apply @, arguments
+      if obj.once
+        console.error "callback called multipled times", cb
+      else
+        clearTimeout obj.id
+        obj.once = true
+        cb.apply @, arguments
   obj.id = setTimeout whenTimeout, timeout
   beforeTimeout
 
@@ -26,7 +31,6 @@ class Test
     if @async
       try
         @func (err, res) =>
-          console.log 'Test.async.afterRun', @name
           result =
             if err
               new TestResult @, @runner.resetLog(), err
@@ -34,7 +38,6 @@ class Test
               new TestResult @, @runner.resetLog()
           callback null, result
       catch e
-        console.log 'Test.error', @name
         callback null, new TestResult @, @runner.resetLog(), e
     else
       result =
