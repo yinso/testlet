@@ -104,11 +104,25 @@ class CliReporter
     else
       @log tabLevel, "[case]", termColor {fg: 'magenta', underline: true}, testResult.case.name
       @log tabLevel + 1, testResult.case.func
-      @log tabLevel, "[actual]", termColor({fg: 'red', bold: true}, testResult.error)
+      @log tabLevel, "[error]", termColor({fg: 'red', bold: true}, testResult.error)
+      @log tabLevel + 2, "[expected]", @serialize(testResult.error.expected)
+      @log tabLevel + 2, "[actual]  ", @serialize(testResult.error.actual)
       if testResult.logs.length > 0
         @log tabLevel, "[logs]"
         for log in testResult.logs
           @log tabLevel + 1, log...
       @log tabLevel
+  serialize: (obj) ->
+    id = 1
+    refs = []
+    helper = (key, val) ->
+      if not (val instanceof Object) or not val
+        return val
+      for ref, i in refs
+        if ref == val
+          return "$<ref:#{i}>"
+      refs.push val
+      val
+    JSON.stringify obj, helper, 2
 
 module.exports = CliReporter

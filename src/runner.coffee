@@ -24,24 +24,43 @@ class Runner
       throw new Error("test.do must be called within test.add")
     @currentSuite.add new Test(@, name, func)
   ok: (val, msg = "ok(#{val})") ->
+    err = new Error(msg)
     if not val
-      throw new Error("failed: #{msg}")
+      err.expected = true
+      err.actual = val
+      throw err
+    else if val instanceof Function
+      res = val()
+      if not res
+        err.expected = true
+        err.actual = res
+        throw err
   equal: (lhs, rhs, msg = "#{lhs} == #{rhs}") ->
     if not deepEqual(lhs, rhs)
-      throw new Error("failed: #{msg}")
+      err = new Error(msg)
+      err.expected = rhs
+      err.actual = lhs
+      throw err
   throws: (lhs, msg = "#{lhs} expect to throw") ->
     try
       lhs()
-      throw new Error("failed: #{msg}")
+      err = new Error(msg)
+      err.expected = "throws"
+      err.actual = "no throw"
+      throw err
     catch e
       return
   isa: (lhs, rhs, msg = "#{lhs} typeof #{rhs}") ->
+    err = new Error(msg)
+    err.expected = rhs
     if typeof(rhs) == 'string'
       if not typeof(lhs) == rhs
-        throw new Error("failed: #{msg}")
+        err.actual = typeof(lhs)
+        throw err
     else
       if not lhs instanceof rhs
-        throw new Error("failed: #{msg}")
+        err.actual = false
+        throw err
   run: (cb) ->
     result = new SuiteResult @
     cases = [].concat(@suites)
