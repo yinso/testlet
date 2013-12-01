@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6269dc35-6db9-49bf-9f97-59395b82a292" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/builtin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/require.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/testlet.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/testlet.iml" afterPath="$PROJECT_DIR$/.idea/testlet.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cli-reporter.coffee" afterPath="$PROJECT_DIR$/src/cli-reporter.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/cli-reporter.js" afterPath="$PROJECT_DIR$/lib/cli-reporter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/compile.coffee" afterPath="$PROJECT_DIR$/src/compile.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/compile.js" afterPath="$PROJECT_DIR$/lib/compile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/file.coffee" afterPath="$PROJECT_DIR$/src/file.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/file.js" afterPath="$PROJECT_DIR$/lib/file.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.bean" afterPath="$PROJECT_DIR$/package.bean" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/runner.coffee" afterPath="$PROJECT_DIR$/src/runner.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/runner.js" afterPath="$PROJECT_DIR$/lib/runner.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test.coffee" afterPath="$PROJECT_DIR$/src/test.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/test.js" afterPath="$PROJECT_DIR$/lib/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/testlet" afterPath="$PROJECT_DIR$/bin/testlet" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testlet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,10 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testlet" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="testlet" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/testlet">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="520" selection-end="520" vertical-scroll-proportion="0.3052917" vertical-offset="0" max-vertical-offset="737">
+            <state line="6" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -101,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.coffee" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="test.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="521" selection-end="521" vertical-scroll-proportion="-6.56" vertical-offset="166" max-vertical-offset="855">
+            <state line="10" column="2" selection-start="247" selection-end="247" vertical-scroll-proportion="0.21067415" vertical-offset="0" max-vertical-offset="1200">
               <folding />
             </state>
           </provider>
@@ -114,9 +96,7 @@
         <entry file="file://$PROJECT_DIR$/src/file.coffee">
           <provider selected="true" editor-type-id="text-editor">
             <state line="29" column="0" selection-start="971" selection-end="971" vertical-scroll-proportion="-17.4" vertical-offset="0" max-vertical-offset="765">
-              <folding>
-                <marker date="1385933319000" expanded="true" signature="981:1161" placeholder="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -124,7 +104,7 @@
       <file leaf-file-name="runner.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/runner.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="0" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-20.4" vertical-offset="645" max-vertical-offset="1380">
+            <state line="77" column="0" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-46.2" vertical-offset="0" max-vertical-offset="1380">
               <folding />
             </state>
           </provider>
@@ -156,7 +136,6 @@
         <option value="$PROJECT_DIR$/src/suite.coffee" />
         <option value="$PROJECT_DIR$/lib/cli-reporter.js" />
         <option value="$PROJECT_DIR$/src/compile.coffee" />
-        <option value="$PROJECT_DIR$/src/test.coffee" />
         <option value="$PROJECT_DIR$/src/cli-reporter.coffee" />
         <option value="$PROJECT_DIR$/src/runner.coffee" />
         <option value="$PROJECT_DIR$/src/file.coffee" />
@@ -164,6 +143,7 @@
         <option value="$PROJECT_DIR$/package.bean" />
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/bin/testlet" />
+        <option value="$PROJECT_DIR$/src/test.coffee" />
       </list>
     </option>
   </component>
@@ -414,33 +394,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="521" selection-end="521" vertical-scroll-proportion="-6.56" vertical-offset="166" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cli-reporter.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="103" column="0" selection-start="2643" selection-end="2643" vertical-scroll-proportion="-16.16" vertical-offset="1141" max-vertical-offset="2115">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/runner.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-20.4" vertical-offset="645" max-vertical-offset="1380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/file.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="971" selection-end="971" vertical-scroll-proportion="-17.4" vertical-offset="0" max-vertical-offset="765">
-          <folding>
-            <marker date="1385933319000" expanded="true" signature="981:1161" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -470,7 +427,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/testlet">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="520" selection-end="520" vertical-scroll-proportion="0.3052917" vertical-offset="0" max-vertical-offset="737">
+        <state line="6" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runner.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="0" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-46.2" vertical-offset="0" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/file.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="971" selection-end="971" vertical-scroll-proportion="-17.4" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="2" selection-start="247" selection-end="247" vertical-scroll-proportion="0.21067415" vertical-offset="0" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>

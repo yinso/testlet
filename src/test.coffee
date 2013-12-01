@@ -1,10 +1,33 @@
 TestResult = require './test-result'
 
 timeoutCallback = (timeout, cb, timeoutCB) ->
+  maxTimeout = 2147483648
+  timeout = if timeout == 0 then Infinity else timeout
   obj =
     id: null
     timedOut: false
     once: false
+    remainder: timeout
+  largeTimeout = (cb, timeout) ->
+    decr = () ->
+      if obj.remainder < maxTimeout
+        res = obj.remainder
+        obj.remainder = 0
+        res
+      else
+        res = maxTimeout
+        obj.remainder -= maxTimeout
+        res
+    callback = () ->
+      if obj.remainder > 0
+        clearTimeout obj.id
+        time = decr()
+        obj.id = setTimeout callback, time
+        obj.id
+      else
+        clearTimeout obj.id
+        cb()
+    callback()
   whenTimeout = () ->
     obj.timedOut = true
     clearTimeout obj.id
@@ -18,7 +41,7 @@ timeoutCallback = (timeout, cb, timeoutCB) ->
         clearTimeout obj.id
         obj.once = true
         cb.apply @, arguments
-  obj.id = setTimeout whenTimeout, timeout
+  obj.id = largeTimeout whenTimeout, timeout
   beforeTimeout
 
 # if we want to deal with timeout... don't worry about it for now.
