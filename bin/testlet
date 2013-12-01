@@ -9,8 +9,8 @@ var argv = require('optimist')
     .usage('Usage: testlet [-t|--timeout <timeout>] [test_script_dir]')
     .argv;
 var path = require('path');
-var test = require('../src/file');
-var compile = require('../src/compile');
+var test = require('../lib/file');
+var compile = require('../lib/compile');
 var timeout = argv.timeout || 2000;
 var targetPath = argv[0] || './test';
 

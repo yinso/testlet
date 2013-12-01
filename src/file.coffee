@@ -12,12 +12,12 @@ normalizePath = (dirPath, filePath) ->
   path.join(path.dirname(fullPath), path.basename(filePath, path.extname(filePath)))
 
 entry = (timeout, dirPath) ->
-  runner = new Runner()
+  runner = new Runner(timeout)
   global.test = runner
-  global.describe = (name, func) ->
-    runner.add name, func
-  global.it = (name, func) ->
-    runner.it name, func
+  global.describe = (args...) ->
+    runner.add args...
+  global.it = (args...) ->
+    runner.it args...
   helper = (filePath, next) ->
     loadTest runner, normalizePath(dirPath, filePath), next
   # how do we ensure that this will load coffee-script?

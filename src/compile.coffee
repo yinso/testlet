@@ -33,12 +33,12 @@ template = (timeout, files, targetPath) ->
   """
 var Runner = require("testlet");
 var test = new Runner(#{timeout});
-function describe (name, func) {
-  test.add(name, func);
+function describe () {
+  test.add.apply(test, arguments);
 }
 
-function it (name, func) {
-  test.it(name, func);
+function it () {
+  test.it.apply(test, arguments);
 }
 
 #{files.join('')}

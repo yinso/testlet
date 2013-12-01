@@ -1,9 +1,7 @@
 Testlet - A Simple Test Framework for NodeJS
 ============================================
 
-Testlet is a simple test framework for Node. The goal of this framework is to afford both command-line based testing
-as well as browser-based testing for the same NodeJS module. This is written with [Amdee](https://github.com/yinso/amdee)
-and [RequireJS](http://requirejs.org) in mind.
+Testlet is a simple test framework for Node.
 
 Installation
 ------------
@@ -28,9 +26,8 @@ Testlet has the following parameters
 
   Default 2000 in milliseconds. This specifies how long a test case is to run before timing out.
 
+  The timeout parameter can also be specified with each test case itself.
 
-Testlet's browser-side isn't ready - it will be described in README as soon as it's ready for use. In the mean time
-you can look at the `.target` folder for a rudimentary understanding on how it would work.
 
 Test Script Structure
 ---------------------
@@ -54,6 +51,11 @@ You can write a test script as follows
                done(e);
             }
         });
+
+        it('this test case has a timeout specified', 50000, function(done) {
+          // note the second parameter is now a timeout in milliseconds.
+          // stuff goes here.
+        });
     });
 
 `describe` creates a test suite that can be used to group test cases, and `it` creates a test case that can be used to
@@ -63,7 +65,8 @@ Both `describe` and `it` expects a `name` (string), and a function. The function
 test cases, and the function for `it` is the test case itself.
 
 The function for `it` can be either synchronous or asynchronous. If you define a parameter for the function, it will be
-run as async (i.e. you are expected to call the callback).
+run as async (i.e. you are expected to call the callback). `it` can also take an optional `timeout` parameter to
+control timeout for this specific test case. Passing `0` for infinite timeout.
 
 `describe` is an alias for `test.add`, and `it` is an alias for `test.it`.
 

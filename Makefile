@@ -22,16 +22,13 @@ GRAMMAR_FILES=$(wildcard $(GRAMMAR_DIR)/*.pegjs)
 all: build
 
 .PHONY: build
-build: node_modules objects lib/testlet.js
+build: node_modules objects
 
 .PHONY: objects
 objects: $(JSON_FILES) $(COFFEE_OBJECTS)
 
 $(JSONDIR)/%.json: $(BEANDIR)/%.bean
 	./node_modules/.bin/bean --source $<
-
-lib/testlet.js: $(COFFEE_SOURCES)
-	./node_modules/.bin/amdee --source src/ --target lib/testlet.js --recursive
 
 .PHONY: test
 test: build

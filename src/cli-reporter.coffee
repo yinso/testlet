@@ -94,7 +94,13 @@ class CliReporter
     else
       termColor {fg: 'red', bold: true}, "failed."
   log: (tabLevel, args...) ->
-    buffer = (arg.toString() for arg in args).join ' '
+    items =
+      for arg in args
+        if typeof(arg) == 'undefined'
+          ''
+        else
+          arg.toString()
+    buffer = items.join ' '
     lines = buffer.split(/\r\n|\r|\n/)
     for line in lines
       console.log tabs(tabLevel), line
@@ -105,6 +111,8 @@ class CliReporter
       @log tabLevel, "[case]", termColor {fg: 'magenta', underline: true}, testResult.case.name
       @log tabLevel + 1, testResult.case.func
       @log tabLevel, "[error]", termColor({fg: 'red', bold: true}, testResult.error)
+      @log tabLevel + 1, testResult.error.stack
+      @log tabLevel + 1, ""
       @log tabLevel + 2, "[expected]", @serialize(testResult.error.expected)
       @log tabLevel + 2, "[actual]  ", @serialize(testResult.error.actual)
       if testResult.logs.length > 0

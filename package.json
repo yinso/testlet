@@ -2,7 +2,7 @@
   "author": "YC <yinso.chen@gmail.com>",
   "name": "testlet",
   "description": "A simple test framework",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "repository": {
     "type": "git",
     "url": "git@github.com:yinso/testlet.git"
@@ -20,14 +20,9 @@
   "main": "./lib/runner.js",
   "dependencies": {
     "coffee-script": "=1.4.0",
-    "amdee": "~ 0.5.4",
     "optimist": "=0.3.1"
   },
   "devDependencies": {
-    "coffee-bean": "=0.1.0",
-    "pegjs": "=0.7.0"
-  },
-  "amdee": {
-    "main": "./src/runner.coffee"
+    "coffee-bean": "=0.1.0"
   }
 }

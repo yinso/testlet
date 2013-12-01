@@ -12,7 +12,8 @@ timeoutCallback = (timeout, cb, timeoutCB) ->
   beforeTimeout = () ->
     if not obj.timedOut
       if obj.once
-        console.error "callback called multipled times", cb
+        #console.error "callback called multipled times", cb
+        return
       else
         clearTimeout obj.id
         obj.once = true
@@ -22,9 +23,8 @@ timeoutCallback = (timeout, cb, timeoutCB) ->
 
 # if we want to deal with timeout... don't worry about it for now.
 class Test
-  constructor: (@runner, @name, @func) ->
+  constructor: (@runner, @name, @func, @timeout = @runner.timeout or 2000) ->
     @async = @func and @func.length
-    @timeout = @runner.timeout or 2000
   run: (next) ->
     callback = timeoutCallback @timeout, next, () =>
       next null, new TestResult @, @runner.resetLog(), new Error("timeout #{@timeout} msec exceeded.")

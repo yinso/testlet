@@ -19,10 +19,13 @@ class Runner
       @currentSuite.eval()
     finally
       @currentSuite = prevSuite
-  it: (name, func) ->
+  it: (name, timeout, func) ->
+    if arguments.length == 2
+      func = timeout
+      timeout = @timeout
     if not @currentSuite
       throw new Error("test.do must be called within test.add")
-    @currentSuite.add new Test(@, name, func)
+    @currentSuite.add new Test(@, name, func, timeout)
   ok: (val, msg = "ok(#{val})") ->
     err = new Error(msg)
     if not val
