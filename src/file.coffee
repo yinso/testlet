@@ -24,9 +24,18 @@ entry = (timeout, dirPath) ->
   fs.readdir dirPath, (err, files) ->
     util.forEach files, helper, (err, res) ->
       if err
-        console.error "[Error] encountered error while loading test cases", err
+        console.error ""
+        console.error "********** LOADING ERROR START **********"
+        console.error ""
+        console.error "(Test script fail to load - check to ensure it compiles/loads with Node)"
+        console.error ""
+        console.error err
+        console.error ""
         if err.stack
           console.error err.stack
+        console.error ""
+        console.error "********** LOADING ERROR END **********"
+        console.error ""
       else
         process.on 'uncaughtException', (err) ->
           console.error ""
