@@ -36,6 +36,7 @@ entry = (timeout, dirPath) ->
         console.error ""
         console.error "********** LOADING ERROR END **********"
         console.error ""
+        process.exit()
       else
         process.on 'uncaughtException', (err) ->
           console.error ""
