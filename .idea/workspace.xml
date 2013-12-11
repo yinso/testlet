@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6269dc35-6db9-49bf-9f97-59395b82a292" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/file.coffee" afterPath="$PROJECT_DIR$/src/file.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/file.js" afterPath="$PROJECT_DIR$/lib/file.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test.coffee" afterPath="$PROJECT_DIR$/src/test.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/test.js" afterPath="$PROJECT_DIR$/lib/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testlet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,19 +31,16 @@
       <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="0" selection-start="2271" selection-end="2271" vertical-scroll-proportion="-38.333332" vertical-offset="0" max-vertical-offset="1500">
+            <state line="69" column="0" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="1500">
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="package.bean" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.bean">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="-12.6" vertical-offset="0" max-vertical-offset="405">
+            <state line="21" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="405">
               <folding />
             </state>
           </provider>
@@ -50,7 +49,7 @@
       <file leaf-file-name="Makefile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
+            <state line="24" column="0" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
@@ -59,7 +58,7 @@
       <file leaf-file-name="testlet" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/testlet">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+            <state line="6" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -68,7 +67,7 @@
       <file leaf-file-name="compile.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/compile.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1025" selection-end="1025" vertical-scroll-proportion="-9.56" vertical-offset="391" max-vertical-offset="1080">
+            <state line="42" column="0" selection-start="1025" selection-end="1025" vertical-scroll-proportion="-11.48" vertical-offset="343" max-vertical-offset="1080">
               <folding />
             </state>
           </provider>
@@ -77,25 +76,25 @@
       <file leaf-file-name="cli-reporter.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cli-reporter.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="0" selection-start="2643" selection-end="2643" vertical-scroll-proportion="-16.16" vertical-offset="1141" max-vertical-offset="2115">
+            <state line="103" column="0" selection-start="2643" selection-end="2643" vertical-scroll-proportion="-6.68" vertical-offset="1378" max-vertical-offset="2115">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.coffee" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="2" selection-start="247" selection-end="247" vertical-scroll-proportion="0.21067415" vertical-offset="0" max-vertical-offset="1200">
+            <state line="44" column="0" selection-start="1026" selection-end="1026" vertical-scroll-proportion="-26.4" vertical-offset="0" max-vertical-offset="1185">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="file.coffee" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="file.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/file.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="971" selection-end="971" vertical-scroll-proportion="-17.4" vertical-offset="0" max-vertical-offset="765">
+            <state line="35" column="0" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.6980337" vertical-offset="28" max-vertical-offset="945">
               <folding />
             </state>
           </provider>
@@ -104,7 +103,7 @@
       <file leaf-file-name="runner.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/runner.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="0" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-46.2" vertical-offset="0" max-vertical-offset="1380">
+            <state line="77" column="0" selection-start="2107" selection-end="2107" vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1380">
               <folding />
             </state>
           </provider>
@@ -138,12 +137,12 @@
         <option value="$PROJECT_DIR$/src/compile.coffee" />
         <option value="$PROJECT_DIR$/src/cli-reporter.coffee" />
         <option value="$PROJECT_DIR$/src/runner.coffee" />
-        <option value="$PROJECT_DIR$/src/file.coffee" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/package.bean" />
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/bin/testlet" />
         <option value="$PROJECT_DIR$/src/test.coffee" />
+        <option value="$PROJECT_DIR$/src/file.coffee" />
       </list>
     </option>
   </component>
@@ -179,7 +178,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -256,6 +254,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -263,6 +262,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
@@ -326,25 +326,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="29" width="1400" height="860" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -359,51 +359,50 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test-result.coffee">
+    <entry file="file://$PROJECT_DIR$/src/test.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="22" selection-start="80" selection-end="80" vertical-scroll-proportion="-1.2" vertical-offset="0" max-vertical-offset="165">
+        <state line="45" column="0" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="1200">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/file.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runner.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="0" selection-start="2107" selection-end="2107" vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test-result.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="22" selection-start="80" selection-end="80" vertical-scroll-proportion="-1.2" vertical-offset="0" max-vertical-offset="165" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/suite-result.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/suite.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
+        <state line="17" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="510" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/util.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="17.4" vertical-offset="435" max-vertical-offset="1140">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/compile.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1025" selection-end="1025" vertical-scroll-proportion="-9.56" vertical-offset="391" max-vertical-offset="1080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cli-reporter.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="0" selection-start="2643" selection-end="2643" vertical-scroll-proportion="-16.16" vertical-offset="1141" max-vertical-offset="2115">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="17.4" vertical-offset="435" max-vertical-offset="1140" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="2271" selection-end="2271" vertical-scroll-proportion="-38.333332" vertical-offset="0" max-vertical-offset="1500">
+        <state line="69" column="0" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="1500">
           <folding />
         </state>
       </provider>
@@ -413,7 +412,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.bean">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="-12.6" vertical-offset="0" max-vertical-offset="405">
+        <state line="21" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="405">
           <folding />
         </state>
       </provider>
@@ -434,21 +433,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/runner.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-46.2" vertical-offset="0" max-vertical-offset="1380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/file.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="971" selection-end="971" vertical-scroll-proportion="-17.4" vertical-offset="0" max-vertical-offset="765">
+        <state line="77" column="0" selection-start="2107" selection-end="2107" vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1380">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="2" selection-start="247" selection-end="247" vertical-scroll-proportion="0.21067415" vertical-offset="0" max-vertical-offset="1200">
+        <state line="44" column="0" selection-start="1026" selection-end="1026" vertical-scroll-proportion="-26.4" vertical-offset="0" max-vertical-offset="1185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cli-reporter.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="0" selection-start="2643" selection-end="2643" vertical-scroll-proportion="-6.68" vertical-offset="1378" max-vertical-offset="2115">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/compile.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1025" selection-end="1025" vertical-scroll-proportion="-11.48" vertical-offset="343" max-vertical-offset="1080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/file.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.6980337" vertical-offset="28" max-vertical-offset="945">
           <folding />
         </state>
       </provider>

@@ -35,7 +35,6 @@ timeoutCallback = (timeout, cb, timeoutCB) ->
   beforeTimeout = () ->
     if not obj.timedOut
       if obj.once
-        #console.error "callback called multipled times", cb
         return
       else
         clearTimeout obj.id

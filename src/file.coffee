@@ -25,7 +25,19 @@ entry = (timeout, dirPath) ->
     util.forEach files, helper, (err, res) ->
       if err
         console.error "[Error] encountered error while loading test cases", err
+        if err.stack
+          console.error err.stack
       else
+        process.on 'uncaughtException', (err) ->
+          console.error ""
+          console.error "********** UNCAUGHT EXCEPTION START **********"
+          console.error ""
+          console.error "(This is likely due to an error thrown inside an async test case callback not being trapped)"
+          console.error ""
+          console.error err.stack
+          console.error ""
+          console.error "********** UNCAUGHT EXCEPTION END **********"
+          console.error ""
         runner.run (err, res) ->
           if err
             console.error "[Error] encountered error while executing test cases", err
