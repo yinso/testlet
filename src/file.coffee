@@ -53,6 +53,7 @@ entry = (timeout, dirPath) ->
           else
             reporter = new CliReporter res
             reporter.report()
+            process.exit()
 
 loadTest = (runner, filePath, next) ->
   try
