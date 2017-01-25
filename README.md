@@ -32,7 +32,7 @@ Testlet has the following parameters
 Test Script Structure
 ---------------------
 
-`Testlet` expects similar test script structure to other test framework such as [`Mocha`](http://visionmedia.github.io/mocha/).
+`Testlet` expects similar test script structure to other test framework such as [`Mocha`](http://mochajs.org/).
 
 You can write a test script as follows
 
